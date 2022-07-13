@@ -40,12 +40,13 @@ dots.forEach((dot) =>
   dot.addEventListener("click", (e) => {
     const targetDot = e.target;
     const currentSlide = track.querySelector(".current-slide");
-    const currentDot = dotsNav.querySelector(".current-slide");
     const targetIndex = dots.findIndex((dot) => dot === targetDot);
     const targetSlide = slides[targetIndex];
     moveToSlide(track, currentSlide, targetSlide);
+    dotsNav
+      .querySelectorAll(".carousel__indicator")
+      .forEach((dot) => dot.classList.remove("current-slide"));
 
-    currentDot.classList.remove("current-slide");
     targetDot.classList.add("current-slide");
   })
 );
