@@ -5,56 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>
-          style 1
-          <ul class="drop-menu menu-#{i}">
-            <li>uno</li>
-            <li>dos</li>
-            <li>tres</li>
-            <li>cuatro</li>
-            <li>cinco</li>
-            <li>seis</li>
-          </ul>
-        </li>
-        <li>
-          style 2
-          <ul class="drop-menu menu-#{i}">
-            <li>uno</li>
-            <li>dos</li>
-            <li>tres</li>
-            <li>cuatro</li>
-            <li>cinco</li>
-            <li>seis</li>
-          </ul>
-        </li>
-        <li>
-          style 3
-          <ul class="drop-menu menu-#{i}">
-            <li>uno</li>
-            <li>dos</li>
-            <li>tres</li>
-            <li>cuatro</li>
-            <li>cinco</li>
-            <li>seis</li>
-          </ul>
-        </li>
-        <li>
-          style 4
-          <ul class="drop-menu menu-#{i}">
-            <li>uno</li>
-            <li>dos</li>
-            <li>tres</li>
-            <li>cuatro</li>
-            <li>cinco</li>
-            <li>seis</li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+    <div class="header">
+      <div class="dropdown" data-dropdown>
+        <button class="link" data-dropdown-button>Information</button>
+        <div class="dropdown-menu information-grid">
+          <div>
+            <div class="dropdown-heading">Free tutorials</div>
+            <div class="dropdown-links">
+              <a href="#">All</a>
+              <a href="#">Latest</a>
+              <a href="#">Popular</a>
+            </div>
+          </div>
+          <div>
+            <div class="dropdown-heading">
+              Courses
+              <div class="dropdown-links">
+                <a href="#">JavaScript</a>
+                <a href="#">CSS</a>
+                <a href="#">React</a>
+              </div>
+            </div>
+            <div class="dropdown-heading">
+              Blog
+              <div class="dropdown-links">
+                <a href="#">All</a>
+                <a href="#">Latest</a>
+                <a href="#">Popular</a>
+              </div>
+            </div>
+            <div class="dropdown-heading">
+              Other
+              <div class="dropdown-links">
+                <a href="#">Twitter</a>
+                <a href="#">Newsletter</a>
+                <a href="#">Discord</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="link">Pricing</a>
+      <button class="link" data-dropdown-button>Login</button>
+    </div>
   </body>
 </html>
